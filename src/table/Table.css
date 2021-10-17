@@ -1,0 +1,202 @@
+/* all */
+.table {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* person */
+.persons {
+  grid-row: 1/3;
+}
+.person {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+/* top-person */
+.top-person {
+  background-color: var(--background-person);
+}
+.person {
+  background-color: var(--background-tables);
+}
+.top-person {
+  padding: 15px;
+  border-radius: 10px;
+}
+.img-person {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.name-jermy span {
+  font-size: 0.5rem;
+  opacity: 0.75;
+}
+.name-jermy h2 {
+  font-weight: normal;
+  margin: 0 35px 30px 0;
+  width: 5ch;
+}
+/* bot-person */
+.bot-person {
+  padding: 15px;
+}
+.bot-person-days {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 0.7rem;
+  padding-top: 10px;
+  text-decoration: none;
+  color: var(--color-texts);
+}
+.bot-person-days:hover {
+  opacity: 1;
+}
+.active {
+  opacity: 1;
+}
+/* tables */
+#tb-top {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+/* table-top */
+.img-top {
+  width: 100%;
+  position: relative;
+}
+.img-top img {
+  width: 50px;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}
+.Exercise img {
+  top: 0;
+}
+/* table-bottom */
+#tb-bottom {
+  background-color: var(--background-tables);
+  border-radius: 10px 10px;
+  cursor: pointer;
+  z-index: 2;
+  width: 100%;
+}
+#tb-bottom:hover {
+  background-color: var(--background-hover-tables);
+}
+.table-bottom {
+  padding: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.story {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.img-bot {
+  width: 15px;
+  opacity: 0.5;
+}
+.img-bot:hover {
+  opacity: 1;
+}
+.img-bot:hover {
+  opacity: 1;
+}
+.hrs {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 5px 0 0 0;
+}
+.week {
+  font-size: 0.65rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 25px;
+  }
+  .tables {
+    height: 100%;
+  }
+  .table {
+    margin: 60px 20px;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100%;
+  }
+  .persons {
+    grid-row: 1;
+    width: 100%;
+  }
+  .top-person {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .bot-person {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .name-jermy {
+    margin-left: 20px;
+  }
+  .name-jermy h2 {
+    width: 12ch;
+    margin: 0;
+  }
+
+  /* .img-top {
+    margin-bottom: 0px;
+  } */
+  .img-top img {
+    width: 100px;
+    top: -15px;
+    right: 20px;
+  }
+  .Exercise img {
+    top: 0;
+  }
+
+  #tb-bottom {
+    margin-top: 50px;
+  }
+  .table-bottom {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hrs {
+    font-weight: normal;
+    margin: 0 0 10px 0;
+  }
+}
+
+/* @media (min-width: 411px) {
+  .table {
+    padding-bottom: 120px;
+  }
+} */
